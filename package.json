@@ -1,0 +1,19 @@
+{
+  "name": "campus-nexus-ai",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Campus Nexus AI — learning & career platform, with an internship certificate pipeline automated via Make.com + Gmail.",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pdfkit": "^0.15.0"
+  }
+}

@@ -1,0 +1,4 @@
+node_modules/
+.env
+data/certificates.json
+generated-certificates/*.pdf

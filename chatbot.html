@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Mentor — Campus Nexus AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a href="index.html" class="brand">
+      <svg class="node-mark" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="6" y1="20" x2="13" y2="7" stroke="#6C63FF" stroke-width="2"/>
+        <line x1="13" y1="7" x2="20" y2="20" stroke="#FFB648" stroke-width="2"/>
+        <circle cx="6" cy="20" r="3.5" fill="#0B1120" stroke="#6C63FF" stroke-width="2"/>
+        <circle cx="13" cy="7" r="3.5" fill="#0B1120" stroke="#4FD1C5" stroke-width="2"/>
+        <circle cx="20" cy="20" r="3.5" fill="#0B1120" stroke="#FFB648" stroke-width="2"/>
+      </svg>
+      Campus Nexus AI
+    </a>
+    <nav class="primary">
+      <a href="roadmaps.html">Roadmaps</a>
+      <a href="quizzes.html">Quizzes</a>
+      <a href="interview-prep.html">Interview Prep</a>
+      <a href="chatbot.html" class="active">AI Mentor</a>
+      <a href="career-guidance.html">Career Guidance</a>
+      <a href="internship.html">Internship</a>
+    </nav>
+    <div class="header-actions">
+      <div data-auth-area style="display:flex; gap:10px"></div>
+      <button class="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap section-tight">
+  <div class="eyebrow">AI Mentor</div>
+  <h1 style="margin-bottom:6px">Ask anything about learning or your career.</h1>
+  <p style="max-width:600px; margin-bottom:28px">This mentor reasons from a rule-based playbook tuned for learning and career questions — think of it as a fast, focused first opinion, not a replacement for a human advisor.</p>
+
+  <div class="chat-shell">
+    <aside class="chat-side">
+      <h4>Try asking</h4>
+      <button class="chip" data-q="How do I build a roadmap to become a data scientist?">Roadmap to become a data scientist</button>
+      <button class="chip" data-q="How should I prepare for a technical interview?">Prep for a technical interview</button>
+      <button class="chip" data-q="Can you review what makes a strong resume?">What makes a strong resume?</button>
+      <button class="chip" data-q="I'm not sure what career fits me, help">Not sure what career fits me</button>
+      <button class="chip" data-q="I'm feeling overwhelmed with my studies">Feeling overwhelmed with studies</button>
+      <button class="chip" data-q="What skills are in demand right now?">Skills in demand right now</button>
+      <h4 style="margin-top:16px">Session</h4>
+      <button class="chip" id="clear-chat">Clear conversation</button>
+    </aside>
+    <div class="chat-main">
+      <div class="chat-log" id="chat-log"></div>
+      <div class="chat-input">
+        <textarea id="chat-text" placeholder="Ask the AI Mentor a question…" rows="1"></textarea>
+        <button class="btn btn-primary" id="chat-send">Send</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fmeta">© 2026 Campus Nexus AI · A learning &amp; career prototype</div>
+    <div class="foot-links">
+      <a href="roadmaps.html">Roadmaps</a>
+      <a href="quizzes.html">Quizzes</a>
+      <a href="career-guidance.html">Career Guidance</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/auth.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>
